@@ -79,7 +79,7 @@ void draw() {
   
   surface.setTitle("" + frameRate);
   fill(64);
-  text(seconds.size(), width/2, height/2+100);
+  text(60-seconds.size(), width/2, height/2+100);
   text(minutes.size(),width/2, height/2);
   text(hours.size(),width/2, height/2-100);
 }
