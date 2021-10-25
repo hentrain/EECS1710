@@ -3,9 +3,8 @@ class Bullet {
   PVector position;
   float rot;
   int timestamp;
-  float velocity = 12;
   boolean alive = true;
-  int lifetime = 1600;
+  int lifetime = 2000;
   PImage bullet;
 
   Bullet(float x, float y, float _rot) {

@@ -1,9 +1,9 @@
  
   void keyPressed() {
-    if(point >= 0){
+    if(point >= 0 && point <500){
       if (key == ' ') {
         cannon.fire();
-        point = point - 1;
+        point = point - pointCost;
       }
       }
     }

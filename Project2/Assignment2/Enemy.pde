@@ -33,13 +33,13 @@ class Enemy {
   void update() {
     if (position.dist(target) < 5) {
       alive = false;
-      point = point - 1;
+      point = point - pointCost;
     }
     for (Bullet bullet : cannon.bullets) {
       if (alive && hitDetectRect(position, bullet.position, enemySize)) {
         alive = false;
         explosions.add(new Explosion(position.x, position.y));
-        point = point + 3;
+        point = point + 5;
       }
     }
     
